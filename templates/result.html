@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Results</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Search Results</h1>
+
+    <h2>Pattern: {{ pattern }}</h2>
+
+    <div class="card">
+        <h3>Naive Search</h3>
+        <p>Matches: {{ naive }}</p>
+        <p>Execution Time: {{ naive_time }} sec</p>
+    </div>
+
+    <div class="card">
+        <h3>KMP Search</h3>
+        <p>Matches: {{ kmp }}</p>
+        <p>Execution Time: {{ kmp_time }} sec</p>
+    </div>
+
+    <div class="card">
+        <h3>Rabin-Karp Search</h3>
+        <p>Matches: {{ rk }}</p>
+        <p>Execution Time: {{ rk_time }} sec</p>
+    </div>
+
+    <img src="/{{ graph }}" width="600">
+
+</div>
+
+</body>
+</html>

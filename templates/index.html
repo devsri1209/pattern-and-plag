@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Plagiarism Detector</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Intelligent Pattern Searching System</h1>
+
+    <form action="/search" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="file" required>
+
+        <input type="text" name="pattern" placeholder="Enter Pattern" required>
+
+        <button type="submit">Analyze</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

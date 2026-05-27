@@ -1,0 +1,5 @@
+Flask=3.0.3
+python-docx
+matplotlib
+numpy
+gunicorn==22.0.0
